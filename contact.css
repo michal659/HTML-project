@@ -1,0 +1,138 @@
+/*תמונה גדולה*/
+#contact {
+    max-width: 100%;
+}
+
+/* מילוי פרטים הכל*/
+form {
+    text-align: center;
+}
+
+/*מה שיש בתוך המסגרת*/
+fieldset {
+    background-color: rgb(2, 64, 2);
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(240, 233, 189);
+    text-align: center;
+    max-width: 100%;
+}
+/*לחצן איפוס*/
+#epos{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+/*שקית שליחה*/
+#send{
+    width: 100px;
+}
+/*הצל של הטקסט*/
+legend {
+    text-shadow: 2px 2px 5px black;
+
+}
+@media(max-width: 750px) {
+    
+    nav a {
+        max-width: 65%;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        color: rgb(12, 11, 12);
+        margin-right: 10%;
+
+    }
+
+    a:link {
+        background-color: goldenrod;
+    }
+
+    a:hover {
+        background-color: gold;
+    }
+
+    .active {
+        background-color: antiquewhite;
+        color: black;
+    }
+
+    #contact {
+        max-width: 100%;
+    }
+
+    form {
+        text-align: left;
+     
+    } 
+    fieldset {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    #epos{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+    }
+    #send{
+        width: 70px;
+    }
+    #res{
+        width: 80%;
+    }
+    
+    .animaztia {
+        display: none;
+    }
+
+}
+
+@media (min-width: 751px) and (max-width: 1250px) {
+    nav a {
+        max-width: 65%;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        color: rgb(12, 11, 12);
+        margin-right: 10%;
+    }
+
+    a:link {
+        background-color: goldenrod;
+    }
+
+    a:hover {
+        background-color: gold;
+    }
+
+    .active {
+        background-color: antiquewhite;
+        color: black;
+    }
+
+    #contact {
+        max-width: 100%;
+    }
+
+    form {
+        text-align: left;
+    }
+
+    fieldset {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    #epos{
+        width: 90px;
+        height: 90px;
+        position: absolute;
+    }
+    #send{
+        width: 90px;
+    }
+    .animaztia {
+        display: none;
+    }
+}

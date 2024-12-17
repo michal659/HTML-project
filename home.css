@@ -1,0 +1,250 @@
+video {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-right: 50%;
+    margin-left: 50%;
+    margin: 10px;
+
+}
+
+.picture {
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 40%;
+
+}
+
+.picture:hover img {
+    transform: scale(0.7);
+}
+
+.section {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 32%;
+    transform: translateX(-50%);
+    background: #f1f1f1;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.picture:hover .section {
+    display: block;
+
+
+}
+
+.section h4 {
+    margin-top: 0;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.animaztia {
+    animation: rotation 10s infinite linear;
+    margin: 10%;
+    margin-left: 50%;
+    margin-bottom: 50%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: CormorantGaramond;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+
+}
+
+
+
+@media(max-width: 750px) {
+    video {
+        max-width: 100%;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    nav a {
+        max-width: 65%;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        color: rgb(12, 11, 12);
+        margin-right: 10%;
+    }
+
+    a:link {
+        background-color: goldenrod;
+    }
+
+    a:hover {
+        background-color: gold;
+    }
+
+    .active {
+        background-color: antiquewhite;
+        color: black;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .animaztia {
+        display: none;
+    }
+
+    .container {
+
+        display: none;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+
+    .picture {
+        margin: 10px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 120px;
+    }
+
+    .picture:hover img {
+        transform: scale(0.7);
+    }
+
+
+    .section {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #f1f1f1;
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .picture:hover .section {
+        display: block;
+
+
+    }
+
+    .section h4 {
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width: 751px) and (max-width: 1250px) {
+    video {
+        max-width: 100%;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    nav a {
+        max-width: 65%;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        color: rgb(12, 11, 12);
+        margin-left: 7%;
+    }
+
+    a:link {
+        background-color: goldenrod;
+    }
+
+    a:hover {
+        background-color: gold;
+    }
+
+    .active {
+        background-color: antiquewhite;
+        color: black;
+    }
+
+    .animaztia {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+
+    .picture {
+        margin: 10px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 120px;
+    }
+
+    .picture:hover img {
+        transform: scale(0.7);
+    }
+
+    .section {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #f1f1f1;
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .picture:hover .section {
+        display: block;
+
+
+    }
+
+    .section h4 {
+        margin-top: 0;
+    }
+}

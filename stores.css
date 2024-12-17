@@ -1,0 +1,175 @@
+h3 {
+    font-size: 3px;
+}
+
+/*תמונות שמתחלפות*/
+#picz {
+    background-image: url("תמונות/סניף\ \(1\).jpg");
+    width: 100%;
+    height: 700px;
+    background-size: 100% 100%;
+    animation: anim1 ease-in-out 20s infinite;
+}
+
+@keyframes anim1 {
+    0% {
+        background-image: url(pictures/סניפים\ \(2\).jpg);
+    }
+
+    25% {
+        background-image: url(pictures/סניפים\ \(1\).png);
+    }
+
+    50% {
+        background-image: url(pictures/סניפים\ \(1\).jpg);
+    }
+
+    75% {
+        background-image: url(pictures/סיפור\ שלנו\ \(3\).png);
+    }
+
+    100% {
+        background-image: url(pictures/סניפים\ \(8\).jpg);
+    }
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+
+}
+
+table {
+    border-collapse: collapse;
+    margin-left:27%;
+    background-image: url(pictures/רקע\ מפה.png);
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+th,
+td,
+tr {
+    border-width: 4px;
+    border-style: double;
+    border-color: goldenrod;
+    padding: 10px;
+    width: 33%;
+    text-align: center;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width: 750px) {
+    .slide {
+        display: none;
+    }
+
+    #picz,
+    .anim1 {
+        display: block;
+        max-width: 99%;
+        height: 200px;
+    }
+
+    table {
+        margin-left: 5px;
+    }
+
+    tr,
+    th,
+    td {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    nav a {
+        max-width: 100%;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        color: rgb(12, 11, 12);
+        margin-right: 10%;
+    }
+    a:link {
+        background-color: goldenrod;
+    }
+
+    a:hover {
+        background-color: gold;
+    }
+
+    .active {
+        background-color: antiquewhite;
+        color: black;
+    }
+
+    .animaztia {
+        display: none;
+    }
+
+}
+@media (min-width: 751px) and (max-width: 1250px) {
+    #picz,
+    .anim1 {
+        display: block;
+        max-width: 99%;
+        height: 400px;
+    }
+
+    table {
+        margin-left: 25%;
+    }
+
+    tr,
+    th,
+    td {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .slide {
+        display: none;
+    }
+    nav a {
+      max-width: 65%;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      color: rgb(12, 11, 12);
+     margin-left: 7%;
+    }
+  
+    a:link {
+      background-color: goldenrod;
+    }
+  
+    a:hover {
+      background-color: gold;
+    }
+  
+    .active {
+      background-color: antiquewhite;
+      color: black;
+    }
+  
+    .animaztia {
+      display: none;
+    }
+}

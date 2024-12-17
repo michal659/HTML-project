@@ -1,0 +1,122 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*לוגו זהב קטן*/
+h3 {
+    font-size: 3px;
+    margin-right: 87%;
+}
+
+/*לוגו לבן*/
+h1 {
+    text-align: center;
+}
+
+/* תפריט*/
+ul {
+    list-style-type: none;
+    text-align: center;
+    /* margin-right: 10%; */
+}
+
+nav {
+    background-color: goldenrod;
+}
+header{
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    max-width: 110%;
+}
+
+li {
+    display: inline;
+   max-width: 100%;
+    font-size: 1.3rem;
+    margin: 5%;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+a:link {
+    background-color: goldenrod;
+}
+
+.active {
+    background-color: antiquewhite;
+    color: black;
+}
+
+
+/* תפריט*/
+/*הכיתוב שזז באמצע*/
+.slide {
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+    font-size: 200px;
+    color: white;
+    text-shadow: 2px 2px 5px goldenrod;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    opacity: 1rem;
+    font-weight: bold;
+}
+
+/*לוגו ירוק מסתובב*/
+.animaztia {
+    animation: rotation 10s infinite linear;
+    margin: 5%;
+    margin-left: 40%;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ @media(max-width: 750px){
+    h3{
+        font-size: 0.3rem;
+    }
+    h1{
+        font-size:0.5rem;
+    }
+    li{
+        font-size: 1rem;
+    }
+    nav a {
+        max-width: 90%;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        color: rgb(12, 11, 12);
+        margin-right: 10%;
+    }
+
+    a:link {
+        background-color: goldenrod;
+    }
+
+    a:hover {
+        background-color: gold;
+    }
+
+    .active {
+        background-color: antiquewhite;
+        color: black;
+    }
+} 

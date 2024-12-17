@@ -1,0 +1,320 @@
+
+/*טעמים*/
+.container {
+  position: relative;
+  width: 50%;
+ padding: 1%;
+}
+
+.image {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  max-width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #cd4015;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .overlay1 {
+  width: 100%;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: pink;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay2 {
+  width: 100%;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: lightblue;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay3 {
+  width: 100%;
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: gray;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay4 {
+  width: 100%;
+}
+
+.overlay4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: darkgreen;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.animaztia {
+  animation: rotation 10s infinite linear;
+  margin: 35px;
+  margin-right: 640px;
+  margin-top: 150px;
+
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.big{
+  display: flex;
+}
+
+h4 {
+  margin-left: 85%;
+  color: goldenrod;
+  text-decoration-line: underline;
+  font-size: 25px;
+  background-color: antiquewhite;
+  text-align: center;
+  margin-right: 50%;
+}
+
+p {
+  color: rgb(3, 3, 3);
+  font-size: 20px;
+  background-color: antiquewhite;
+  font-weight: bolder;
+  text-align: center;
+
+}
+
+/*תמונות למטה*/
+.film-strip {
+  display: flex;
+  /*overflow-x: scroll;*/
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+
+}
+
+.film-strip img {
+  flex: 0 0 auto;
+  width: 20%;
+  height: 250px;
+  scroll-snap-align: center;
+  border: 5px double goldenrod;
+  padding: 3px;
+}
+
+@keyframes film-strip {
+  0% {
+    left: 0px;
+  }
+
+  16.67% {
+    left: 200px;
+  }
+
+  33.33% {
+    left: 400px;
+  }
+
+  50% {
+    left: 600px;
+  }
+
+  66.67% {
+    left: 800px;
+  }
+
+  83.33% {
+    left: 1000px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.film-strip {
+  position: relative;
+  animation-name: film-strip;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.image:nth-child(1) {
+  top: 0px;
+}
+
+.image:nth-child(2) {
+  top: 100px;
+}
+
+.image:nth-child(3) {
+  top: 200px;
+}
+
+.image:nth-child(4) {
+  top: 300px;
+}
+
+.image:nth-child(5) {
+  top: 500px;
+}
+
+/*כפתורים ליגורט*/
+.card {
+  text-align: center;
+}
+@media(max-width: 750px) {
+  nav a {
+    max-width: 65%;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(12, 11, 12);
+   
+  }
+
+  a:link {
+    background-color: goldenrod;
+  }
+
+  a:hover {
+    background-color: gold;
+  }
+
+  .active {
+    background-color: antiquewhite;
+    color: black;
+  }
+
+  .animaztia {
+    display: none;
+  }
+
+  .big {
+    display: block;
+    margin-right: 2%;
+
+  }
+
+  .image  {
+    width: 90%;
+  }
+
+  .film-strip {
+    width: 900px;
+    animation-duration: 5s;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1250px) {
+  nav a {
+    max-width: 65%;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(12, 11, 12);
+   margin-left: 7%;
+  }
+
+  a:link {
+    background-color: goldenrod;
+  }
+
+  a:hover {
+    background-color: gold;
+  }
+
+  .active {
+    background-color: antiquewhite;
+    color: black;
+  }
+
+  .animaztia {
+    display: none;
+  }
+
+  .image {
+    width: 525px;
+    margin-left: 15%;
+  }
+   .big ,.overlay, .overlay1 ,.overlay2 ,.overlay3 ,.overlay4{
+    margin-left: 15%;
+  }
+  .big {
+    display: block;
+    width: 540px;
+ 
+  }
+  .film-strip {
+    width: 900px;
+    animation-duration: 5s;
+  }
+}
